@@ -1,0 +1,31 @@
+[user]
+    name = Gustavo Luvizotto Cesar
+    email = gustavoluvizotto@gmail.com
+[core]
+    editor = vim
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[merge]
+    tool = mymeld
+    conflictstyle = diff3
+[mergetool "mymeld"]
+    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $BASE $REMOTE $MERGED
+
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --date-order
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	dif = diff -U8 --patience -M -C
+	st = status
+	ci = commit
+    co = checkout
+    br = branch
+    toplevel = rev-parse --show-toplevel
+    unversioned = ls-files --other --exclude \"*.swp\" --exclude \".svn\" --exclude \".git\"
+    up = pull --rebase
+    reflog = reflog --format='$C(auto)%h %<|(17)%gd %C(blue)%ci%C(reset) %gs'
+[collor "diff"]
+    whitespace = red reverse
