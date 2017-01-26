@@ -25,4 +25,4 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 filetype plugin on
-"set background=dark
+set background=dark
