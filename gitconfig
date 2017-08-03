@@ -12,12 +12,17 @@
 [merge]
     tool = meld
     conflictstyle = diff3
+#mergetool not needed for vimdiff
 [mergetool "meld"]
     cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $BASE $REMOTE $MERGED
 [diff]
     tool = meld
+#    tool = vimdiff
+#meld on Windows.
 [difftool "meld"]
     path = C:\\Program Files (x86)\\Meld\\Meld.exe
+#[difftool "vimdiff"]                                                           
+#    path = /usr/bin/vimdiff 
 [alias]
     lol = log --graph --decorate --pretty=oneline --abbrev-commit --date-order
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
