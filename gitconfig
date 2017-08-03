@@ -17,7 +17,7 @@
 [diff]
     tool = meld
 [difftool "meld"]
-        path = C:\\Program Files (x86)\\Meld\\Meld.exe
+    path = C:\\Program Files (x86)\\Meld\\Meld.exe
 [alias]
     lol = log --graph --decorate --pretty=oneline --abbrev-commit --date-order
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
@@ -30,5 +30,6 @@
     unversioned = ls-files --other --exclude \"*.swp\" --exclude \".svn\" --exclude \".git\"
     up = pull --rebase
     reflog = reflog --format='$C(auto)%h %<|(17)%gd %C(blue)%ci%C(reset) %gs'
+    cl = clean -xffd
 [collor "diff"]
     whitespace = red reverse
