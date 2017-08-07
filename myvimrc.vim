@@ -1,3 +1,4 @@
+"https://github.com/amix/vimrc
 set encoding=utf8
 set paste
 set number
