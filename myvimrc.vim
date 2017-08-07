@@ -21,10 +21,11 @@ set textwidth=0
 autocmd BufWritePre * %s/\s\+$//e
 set foldmethod=marker
 set colorcolumn=80
-execute pathogen#infect()
-call pathogen#helptags()
+"execute pathogen#infect()
+"call pathogen#helptags()
 syntax on
 filetype plugin indent on
 filetype plugin on
 set background=dark
 set mouse=a
+"match ErrorMsg /\%>80v.\+/
