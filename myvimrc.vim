@@ -55,4 +55,4 @@ map <leader>tm :tabmove
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/                              
 vnoremap <silent> * :call VisualSelection('f')<CR>                              
 vnoremap <silent> # :call VisualSelection('b')<CR>                              
-"SyntasticToggleMode
+"autocmd SyntasticToggleMode
