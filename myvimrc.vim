@@ -41,3 +41,18 @@ map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "left"                                                   
 let g:NERDTreeDirArrowExpandable = '>'                                          
 let g:NERDTreeDirArrowCollapsible = 'v'
+map <C-j> <C-W>j                                                                
+map <C-k> <C-W>k                                                                
+map <C-h> <C-W>h                                                                
+map <C-l> <C-W>l
+"<leader> is ,
+map <leader>tn :tabnew<cr>                                                      
+map <leader>to :tabonly<cr>                                                     
+map <leader>tc :tabclose<cr>                                                    
+map <leader>tm :tabmove                                                         
+" Opens a new tab with the current buffer's path                                
+" Super useful when editing files in the same directory                         
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/                              
+vnoremap <silent> * :call VisualSelection('f')<CR>                              
+vnoremap <silent> # :call VisualSelection('b')<CR>                              
+"SyntasticToggleMode
