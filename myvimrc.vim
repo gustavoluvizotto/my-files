@@ -29,3 +29,5 @@ filetype plugin on
 set background=dark
 set mouse=a
 "match ErrorMsg /\%>80v.\+/
+" Press F4 to toggle highlighting on/off, and show current value.
+noremap <F4> :set hlsearch! hlsearch?<CR>
