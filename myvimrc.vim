@@ -31,3 +31,13 @@ set mouse=a
 "match ErrorMsg /\%>80v.\+/
 " Press F4 to toggle highlighting on/off, and show current value.
 noremap <F4> :set hlsearch! hlsearch?<CR>
+"NERDTree based commands                                                        
+"autocmd vimenter * NERDTree                                                    
+autocmd StdinReadPre * let s:std_in=1                                           
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif     
+autocmd StdinReadPre * let s:std_in=1                                           
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+map <C-n> :NERDTreeToggle<CR>                                                   
+let g:NERDTreeWinPos = "left"                                                   
+let g:NERDTreeDirArrowExpandable = '>'                                          
+let g:NERDTreeDirArrowCollapsible = 'v'
