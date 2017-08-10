@@ -46,8 +46,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h                                                                
 map <C-l> <C-W>l                           
 vnoremap <silent> * :call VisualSelection('f')<CR>                              
-vnoremap <silent> # :call VisualSelection('b')<CR>                              
-"autocmd SyntasticToggleMode
-"autocmd SyntasticReset                                                          
-"autocmd let g:syntastic_mode_map = { 'passive_filetypes': ['c'] }               
+vnoremap <silent> # :call VisualSelection('b')<CR>                                                                                  
 set pastetoggle=<F2> 
+let g:syntastic_mode_map = { 'mode': 'passive' }                                
+let g:syntastic_quiet_messages = { "type": "style" }                            
+let g:syntastic_quiet_messages = { "type": "syntax" }                           
+"so %                                                                           
+"so $MYVIMRC  
