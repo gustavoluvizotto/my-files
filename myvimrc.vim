@@ -48,3 +48,6 @@ map <C-l> <C-W>l
 vnoremap <silent> * :call VisualSelection('f')<CR>                              
 vnoremap <silent> # :call VisualSelection('b')<CR>                              
 "autocmd SyntasticToggleMode
+"autocmd SyntasticReset                                                          
+"autocmd let g:syntastic_mode_map = { 'passive_filetypes': ['c'] }               
+set pastetoggle=<F2> 
