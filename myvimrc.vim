@@ -53,3 +53,5 @@ let g:syntastic_quiet_messages = { "type": "style" }
 let g:syntastic_quiet_messages = { "type": "syntax" }                           
 "so %                                                                           
 "so $MYVIMRC  
+inoremap <C-e> <Esc>A
+inoremap <C-a> <Esc>I
