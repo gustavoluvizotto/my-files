@@ -3,6 +3,11 @@
     email = <>
 [core]
     editor = vim
+    preloadindex = true                                                         
+    autocrlf = input                                                            
+    safecrlf = true                                                             
+    eol = lf                                                                    
+    whitespace = blank-at-eol,space-before-tab,enabled,indent-with-non-tab,blank-at-eof,trailing-space,cr-at-eol
 [color]
     ui = true
     branch = auto
@@ -37,5 +42,6 @@
     up = pull --rebase
     reflog = reflog --format='$C(auto)%h %<|(17)%gd %C(blue)%ci%C(reset) %gs'
     cl = clean -xffd
+    gn = grep -n
 [collor "diff"]
     whitespace = red reverse
