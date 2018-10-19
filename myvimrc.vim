@@ -55,3 +55,8 @@ let g:syntastic_quiet_messages = { "type": "syntax" }
 "so $MYVIMRC  
 inoremap <C-e> <Esc>A
 inoremap <C-a> <Esc>I
+set guicursor+=i:blinkwait6                                                     
+inoremap <C-e> <Esc>A                                                           
+inoremap <C-a> <Esc>I                                                           
+inoremap <A-h> <C-o>h                                                           
+noremap <A-l> <C-o>l 
