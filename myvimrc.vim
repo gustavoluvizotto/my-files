@@ -18,7 +18,8 @@ set foldlevel=0
 set clipboard+=unnamed
 set columns=80
 set textwidth=0
-autocmd BufWritePre * %s/\s\+$//e
+"becareful with command bellow!!
+"autocmd BufWritePre * %s/\s\+$//e
 set foldmethod=marker
 set colorcolumn=80
 "execute pathogen#infect()
