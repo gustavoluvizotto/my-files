@@ -1,4 +1,5 @@
 "https://github.com/amix/vimrc
+"https://github.com/sickill/vim-monokai
 set encoding=utf8
 set paste
 set number
@@ -25,6 +26,8 @@ set colorcolumn=80
 "execute pathogen#infect()
 "call pathogen#helptags()
 syntax on
+syntax enable
+"colorscheme monokai
 filetype plugin indent on
 filetype plugin on
 set background=dark
