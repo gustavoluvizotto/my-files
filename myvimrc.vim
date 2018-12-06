@@ -1,3 +1,4 @@
+
 "https://github.com/amix/vimrc
 "https://github.com/sickill/vim-monokai
 set encoding=utf8
@@ -24,7 +25,8 @@ set colorcolumn=80
 set background=dark
 set mouse=a
 set guicursor+=i:blinkwait6  
-set pastetoggle=<F2> 
+set pastetoggle=<F2>
+set list
 syntax on
 syntax enable
 filetype plugin indent on
